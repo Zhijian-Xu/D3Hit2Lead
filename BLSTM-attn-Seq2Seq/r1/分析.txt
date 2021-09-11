@@ -1,0 +1,33 @@
+number of all the novel molecules:
+234
+number of the unique novel molecules:
+221
+Num of valid molecules:
+1340
+Num of unique valid molecules:
+871
+Num of novel molecules:
+221
+Valid:
+0.44951358604495134
+Accuracy:
+0.19288829251928882
+Novel:
+0.07413619590741362
+Unique:
+0.2921838309292184
+logP:
+2.6288803880596974
+QED:
+0.5709604796610748
+QED of new molecules:
+0.5739143975090505
+Max QED:
+0.9473518201301349
+Min QED:
+0.038071481871448536
+The average QED of training set:
+0.5800321387549462
+14357
+The average logP of training set:
+2.883276490910362

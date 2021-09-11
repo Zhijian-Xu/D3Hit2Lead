@@ -1,0 +1,68 @@
+SYSTEM: Preparing env...
+SYSTEM: Running...
+==========parameters===========
+learning rate : 0.005
+epoches : 30
+protein embedding size : 64
+molecule embedding size : 256
+protein hidden size : 128
+molecule hidden size : 512
+decoder hiddden size : 512
+dropout : 0.1
+layers : 3
+plot_every : 500
+max length : 70
+min length : 25
+说明
+===============================
+Reading lines..
+Read 41127 sentence pairs
+Trimmed to 22691 sentence pairs
+Counted words:
+incom 32
+com 33
+protein 22
+['CCN(C(=S)c1ccc/c(=C(_C(F)(F)F)/C(=C)O)/c1=C)C', 'COc1ccc2c(cccc2c1C(F)(F)F)C(=S)N(C)CC(=O)O', 'MASHLELNNGTKMPTLGLGTWKSPPGQVTEAVKVAIDMGYRHIDCAQVYQNEKEVGVALQEKLKEQVVKRQDLFIVSKLWCTFHDQSMVKGACQKTLSDLQLDYLDLYLIHWPTGFKPGPDYFPLDASGNVIPSDTDFVDTWTAMEQLVDEGLVKAIGVSNFNPLQIERILNKPGLKYKPAVNQIECHPYLTQEKLIEYCHCKGIVVTAYSPLGSPDRPWAKPEDPSLLEDPRIKEIAAKYNKTTAQVLIRFPIQRNLVVIPKSVTPARIAENFKVFDFELSNEDMATLLSYNRNWRVCALMSCAKHKDYPFHAEV']
+{0: 'SOS', 1: 'EOS', 2: 'C', 3: '(', 4: '/', 5: '=', 6: 'F', 7: ')', 8: '_', 9: 'S', 10: 'O', 11: 'N', 12: 'c', 13: '1', 14: 'n', 15: '2', 16: '[', 17: 'H', 18: ']', 19: 'l', 20: '#', 21: 's', 22: '3', 23: 'B', 24: 'r', 25: '@', 26: '4', 27: 'o', 28: 'I', 29: '-', 30: 'P', 31: '5'}
+{0: 'SOS', 1: 'EOS', 2: 'F', 3: 'c', 4: '1', 5: '(', 6: ')', 7: 'S', 8: '=', 9: 'O', 10: 'C', 11: 'N', 12: '2', 13: '3', 14: 'n', 15: 'l', 16: 's', 17: '#', 18: '[', 19: 'H', 20: ']', 21: '+', 22: '-', 23: 'B', 24: 'r', 25: '/', 26: '_', 27: '@', 28: 'o', 29: 'I', 30: '4', 31: '5', 32: 'P'}
+{0: 'SOS', 1: 'EOS', 2: 'M', 3: 'N', 4: 'A', 5: 'E', 6: 'F', 7: 'I', 8: 'L', 9: 'T', 10: 'D', 11: 'S', 12: 'Y', 13: 'K', 14: 'V', 15: 'H', 16: 'Q', 17: 'P', 18: 'C', 19: 'R', 20: 'G', 21: 'W'}
+Cong! We have processed the data successfully!
+length of train pairs
+16393
+length of test pairs
+3404
+length of validate pairs
+2894
+Epoch: 1 : [Running time : 123m 11s | Leaving Time : 3572m 26s ], Iterations : 16393 (3%) Train Loss: 1.8094 | Val Loss: 2.3038
+Epoch: 2 : [Running time : 246m 15s | Leaving Time : 3447m 37s ], Iterations : 32786 (6%) Train Loss: 1.5194 | Val Loss: 2.2408
+Epoch: 3 : [Running time : 369m 27s | Leaving Time : 3325m 10s ], Iterations : 49179 (10%) Train Loss: 1.4550 | Val Loss: 2.1671
+Epoch: 4 : [Running time : 492m 54s | Leaving Time : 3203m 53s ], Iterations : 65572 (13%) Train Loss: 1.3950 | Val Loss: 2.2827
+Epoch: 5 : [Running time : 616m 11s | Leaving Time : 3080m 59s ], Iterations : 81965 (16%) Train Loss: 1.3636 | Val Loss: 2.1754
+Epoch: 6 : [Running time : 739m 37s | Leaving Time : 2958m 30s ], Iterations : 98358 (20%) Train Loss: 1.3217 | Val Loss: 2.1408
+Epoch: 7 : [Running time : 863m 3s | Leaving Time : 2835m 47s ], Iterations : 114751 (23%) Train Loss: 1.2892 | Val Loss: 2.0652
+Epoch: 8 : [Running time : 986m 23s | Leaving Time : 2712m 35s ], Iterations : 131144 (26%) Train Loss: 1.2433 | Val Loss: 1.9668
+Epoch: 9 : [Running time : 1109m 44s | Leaving Time : 2589m 23s ], Iterations : 147537 (30%) Train Loss: 1.2013 | Val Loss: 1.9367
+Epoch: 10 : [Running time : 1233m 9s | Leaving Time : 2466m 18s ], Iterations : 163930 (33%) Train Loss: 1.1460 | Val Loss: 1.9305
+Epoch: 11 : [Running time : 1356m 36s | Leaving Time : 2343m 13s ], Iterations : 180323 (36%) Train Loss: 1.1035 | Val Loss: 1.8092
+Epoch: 12 : [Running time : 1480m 3s | Leaving Time : 2220m 4s ], Iterations : 196716 (40%) Train Loss: 1.0325 | Val Loss: 1.7963
+Epoch: 13 : [Running time : 1603m 25s | Leaving Time : 2096m 46s ], Iterations : 213109 (43%) Train Loss: 1.0053 | Val Loss: 1.7962
+Epoch: 14 : [Running time : 1726m 43s | Leaving Time : 1973m 24s ], Iterations : 229502 (46%) Train Loss: 0.9342 | Val Loss: 1.7292
+Epoch: 15 : [Running time : 1850m 11s | Leaving Time : 1850m 11s ], Iterations : 245895 (50%) Train Loss: 0.9036 | Val Loss: 1.6943
+Epoch: 16 : [Running time : 1973m 35s | Leaving Time : 1726m 53s ], Iterations : 262288 (53%) Train Loss: 0.8248 | Val Loss: 1.6380
+Epoch: 17 : [Running time : 2097m 6s | Leaving Time : 1603m 40s ], Iterations : 278681 (56%) Train Loss: 0.7927 | Val Loss: 1.6324
+Epoch: 18 : [Running time : 2220m 37s | Leaving Time : 1480m 24s ], Iterations : 295074 (60%) Train Loss: 0.7535 | Val Loss: 1.5690
+Epoch: 19 : [Running time : 2344m 9s | Leaving Time : 1357m 8s ], Iterations : 311467 (63%) Train Loss: 0.7362 | Val Loss: 1.6156
+Epoch: 20 : [Running time : 2467m 37s | Leaving Time : 1233m 48s ], Iterations : 327860 (66%) Train Loss: 0.6779 | Val Loss: 1.5943
+Epoch: 21 : [Running time : 2591m 15s | Leaving Time : 1110m 32s ], Iterations : 344253 (70%) Train Loss: 0.6264 | Val Loss: 1.4965
+Epoch: 22 : [Running time : 2714m 40s | Leaving Time : 987m 9s ], Iterations : 360646 (73%) Train Loss: 0.5688 | Val Loss: 1.5214
+Epoch: 23 : [Running time : 2838m 9s | Leaving Time : 863m 47s ], Iterations : 377039 (76%) Train Loss: 0.4993 | Val Loss: 1.5247
+Epoch: 24 : [Running time : 2961m 39s | Leaving Time : 740m 24s ], Iterations : 393432 (80%) Train Loss: 0.4995 | Val Loss: 1.5106
+Epoch: 25 : [Running time : 3085m 14s | Leaving Time : 617m 2s ], Iterations : 409825 (83%) Train Loss: 0.4617 | Val Loss: 1.4240
+Epoch: 26 : [Running time : 3208m 42s | Leaving Time : 493m 38s ], Iterations : 426218 (86%) Train Loss: 0.4469 | Val Loss: 1.5851
+Epoch: 27 : [Running time : 3332m 16s | Leaving Time : 370m 15s ], Iterations : 442611 (90%) Train Loss: 0.4307 | Val Loss: 1.4805
+Epoch: 28 : [Running time : 3455m 58s | Leaving Time : 246m 51s ], Iterations : 459004 (93%) Train Loss: 0.3884 | Val Loss: 1.4647
+Epoch: 29 : [Running time : 3579m 39s | Leaving Time : 123m 26s ], Iterations : 475397 (96%) Train Loss: 0.3924 | Val Loss: 1.5027
+Epoch: 30 : [Running time : 3703m 18s | Leaving Time : 0m 0s ], Iterations : 491790 (100%) Train Loss: 0.4018 | Val Loss: 1.5257
+evaluate successfully
+SYSTEM: Finishing...
+SYSTEM: Done!

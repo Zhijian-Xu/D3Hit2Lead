@@ -1,0 +1,2 @@
+The input hit|predicted lead
+C(/C=C(/F)\C=C(\S(=O)(=O)/C(=C/C)/C=C\CCNC(=O)/C=C/NC)/C)F	Fc1cc(F)cc(c1)S(=O)(=O)c1ccc(CNC(=O)c2ccc3nccn3c2)cc1

@@ -1,0 +1,3 @@
+C/C=C(/C(F)(F)F)\C1=CCCC1C	NC1C2CCC1c1c2cccc1C(F)(F)F	ccccccccccccccccccccccccccc
+Cc1c(csc1C=O)C/C(=C/N)/C=N	Cc1c(Cc2cnc(C)nc2N)csc1C=O	ccccccccccccccccccccccccccc
+c1c(cccc1)O/C(=C/C=C/OC)/C	N#CSCCOc1ccc(Oc2ccccc2)cc1	ccccccccccccccccccccccccccc

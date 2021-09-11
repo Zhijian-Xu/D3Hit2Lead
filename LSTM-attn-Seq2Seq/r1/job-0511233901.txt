@@ -1,0 +1,161 @@
+SYSTEM: Preparing env...
+SYSTEM: Running...
+==========parameters===========
+learning rate : 0.005
+epoches : 30
+embedding size : 256
+hidden size : 512
+dropout : 0.1
+layers : 3
+plot_every : 500
+max length : 70
+min length : 25
+说明
+===============================
+Reading lines..
+Read 28452 sentence pairs
+Trimmed to 19872 sentence pairs
+Counted words:
+incom 32
+com 33
+['C(=C)/C(=C_C=C)/NCCCCN(C)C(CC)C', 'O=C(Nc1ccccc1)C1CN(C2CCCCC2)C(=O)C1']
+{0: 'SOS', 1: 'EOS', 2: 'C', 3: '(', 4: '/', 5: '=', 6: 'F', 7: ')', 8: '_', 9: 'S', 10: 'O', 11: 'N', 12: 'c', 13: '1', 14: 'n', 15: '2', 16: '[', 17: 'H', 18: ']', 19: 'l', 20: '#', 21: 's', 22: '@', 23: '3', 24: 'B', 25: 'r', 26: '4', 27: 'o', 28: 'I', 29: '-', 30: 'P', 31: '5'}
+Cong! We have processed the data successfully!
+length of train pairs
+14357
+length of test pairs
+2981
+length of validate pairs
+2534
+Epoch: 1 : 27m 24s (- 794m 42s) (14357 3%) Loss: 1.8718 | Val: 2.3155
+Epoch: 2 : 56m 16s (- 787m 47s) (28714 6%) Loss: 1.5982 | Val: 2.3368
+Epoch: 3 : 84m 27s (- 760m 6s) (43071 10%) Loss: 1.5168 | Val: 2.2844
+Epoch: 4 : 119m 43s (- 778m 11s) (57428 13%) Loss: 1.4658 | Val: 2.3520
+Epoch: 5 : 154m 56s (- 774m 43s) (71785 16%) Loss: 1.4195 | Val: 2.4463
+Epoch: 6 : 181m 55s (- 727m 40s) (86142 20%) Loss: 1.3961 | Val: 2.3485
+Epoch: 7 : 208m 46s (- 685m 59s) (100499 23%) Loss: 1.3930 | Val: 2.2763
+Epoch: 8 : 235m 43s (- 648m 13s) (114856 26%) Loss: 1.3356 | Val: 2.3141
+Epoch: 9 : 262m 33s (- 612m 38s) (129213 30%) Loss: 1.3215 | Val: 2.3299
+Epoch: 10 : 289m 27s (- 578m 55s) (143570 33%) Loss: 1.2943 | Val: 2.2438
+Epoch: 11 : 316m 26s (- 546m 34s) (157927 36%) Loss: 1.2633 | Val: 2.1697
+Epoch: 12 : 343m 23s (- 515m 5s) (172284 40%) Loss: 1.2303 | Val: 2.1099
+Epoch: 13 : 370m 13s (- 484m 8s) (186641 43%) Loss: 1.2066 | Val: 2.2202
+Epoch: 14 : 397m 11s (- 453m 56s) (200998 46%) Loss: 1.1567 | Val: 2.1903
+Epoch: 15 : 424m 4s (- 424m 4s) (215355 50%) Loss: 1.1145 | Val: 2.1551
+Epoch: 16 : 451m 1s (- 394m 38s) (229712 53%) Loss: 1.0676 | Val: 2.1507
+Epoch: 17 : 477m 58s (- 365m 30s) (244069 56%) Loss: 1.0259 | Val: 2.0390
+Epoch: 18 : 504m 56s (- 336m 37s) (258426 60%) Loss: 1.0089 | Val: 2.1561
+Epoch: 19 : 531m 50s (- 307m 54s) (272783 63%) Loss: 0.9353 | Val: 2.0590
+Epoch: 20 : 558m 55s (- 279m 27s) (287140 66%) Loss: 0.8999 | Val: 2.1234
+Epoch: 21 : 586m 7s (- 251m 11s) (301497 70%) Loss: 0.8137 | Val: 2.1527
+Epoch: 22 : 617m 16s (- 224m 27s) (315854 73%) Loss: 0.7776 | Val: 2.1246
+Epoch: 23 : 649m 26s (- 197m 39s) (330211 76%) Loss: 0.7247 | Val: 2.1479
+Epoch: 24 : 680m 38s (- 170m 9s) (344568 80%) Loss: 0.7133 | Val: 2.0492
+Epoch: 25 : 709m 36s (- 141m 55s) (358925 83%) Loss: 0.6395 | Val: 2.1333
+Epoch: 26 : 738m 30s (- 113m 37s) (373282 86%) Loss: 0.5839 | Val: 2.1658
+Epoch: 27 : 771m 6s (- 85m 40s) (387639 90%) Loss: 0.5298 | Val: 2.1221
+Epoch: 28 : 801m 58s (- 57m 17s) (401996 93%) Loss: 0.5071 | Val: 2.2092
+Epoch: 29 : 833m 23s (- 28m 44s) (416353 96%) Loss: 0.4548 | Val: 2.2453
+Epoch: 30 : 871m 5s (- 0m 0s) (430710 100%) Loss: 0.4477 | Val: 2.0960
+input = O=N/C(=C/Cn1nc(c(c1C)COCC)C)/C
+answer= CCOC(=O)c1c(C)nn(c1C)c1cccc(c1)[N+](=O)[O-]
+output = CCOC(=O)c1cnc2[nH]ncc2c1c1cc(F)c(F)cc1O
+
+
+input = c1cccc(c1)CSCCC(O)CNCCC/N=C_N=C(_N)/CN
+answer= Nc1ncnc2c(CN3CC(O)C(CSCc4ccccc4)C3)c[nH]c12
+output = Nc1ncnc2c(CN3CC(O)C(CSc4ccc(Cl)cc4)C3)c[nH]c12
+
+
+input = S(=O)(=O)(/C(=C/C)/C=C_CCNCc1ccc(C(CO)O)cc1)NC(=C)/C=C_C=C
+answer= CN(Cc1ccc(cc1)C(O)CO)C(=O)c1ccc(cc1)S(=O)(=O)Nc1ccccc1
+output = Cc1ccc(cc1)c1csc2ncc(NC(=O)ccccccc(O)(OcOccccccccccccccccccc
+
+
+input = C1N(C/C(=C(_N)/N=C)/N)CCOC1
+answer= NCC1CN(CCO1)c1ncnc2nc[nH]c12
+output = Nc1ncnc2n(cnc12)C1CC(O)C(O)C1O
+
+
+input = CCCc1nc(cc(C(=C)/C=C_C(=C)C)c1CN)C
+answer= CC(C)Cc1nc(C)c(C(=O)O)c(c2ccc(C)cc2)c1CN
+output = CCc1nc(CC(ccccccccccccccccccccccccc
+
+
+input = c1ccc(cc1)CNC(=O)OC1CNC[C@H]1CN(C(C)C)C(=O)c1cc(ccc1)OCCCOC
+answer= COCCCOc1cc(ccc1OC)C(=O)N(C[C@@H]1CNC[C@H]1OC(=O)NCc1ccccc1)C(C)C
+output = COCCCOc1cc(ccc1OC)C(=O)N(C[C@@H]1CNC[C@H]1OC(=O)NCc1ccccc1)C(C)C
+
+
+input = C1C(CCOc2cc(ccc2)/C=C(_N)/CNCC(C)NS(=O)c2ccccc2)CCNC1
+answer= OC(=O)[C@H](CNC(=O)c1cc2cc(OCCC3CCNCC3)ccc2[nH]1)NS(=O)(=O)c1ccccc1
+output = Cc1ccc(c(1)[c(N=(OOO[C(CcCCCCCCcccccccccccccccccccccccccccccccccc
+
+
+input = C(=O)(N1CCOCC1)C(=C)/N=C(_NCc1ccc(cc1Cl)Cl)/N=C(C)C
+answer= Cc1nc2nc(cn2c(c1CN)c1ccc(Cl)cc1Cl)C(=O)N1CCOCC1
+output = Cc1nc(nc(NcccccccccccccccccccccccCCCCCCCCCCCCCCCCC
+
+
+input = C1C=C(C(=O)NC1=N)C(=O)Nc1cc(ccc1Cl)C(=O)OC
+answer= COC(=O)c1ccc(Cl)c(NC(=O)c2cc3cnc(OC)nc3[nH]c2=O)c1
+output = COC(=O)Cc1ccc2Nc3cc(Nc4cc(ccccccccccccccccccccccc
+
+
+input = C(=C_CCCOC(=O)/C(=C_C)/S/C=C/C=C_C=C)/C
+answer= OC1=C(Sc2ccccc2Cl)C(=O)OC2(CCc3ccccc23)C1
+output = OC1=C(Sc2ccccc2Cl)C(=O)OC2(Ccccccccc
+
+
+input = CNC/N=C_N=C_C=C_SCNC(=O)c1ccc(cc1)F
+answer= CC(C)Nc1cc(ncn1)c1csc(n1)N(C)C(=O)c1ccc(F)cc1
+output = CN(c1c(N)n(Cc2cnccn2)c1Sc1ccccc1)C(=O)N1CCCC1
+
+
+input = C(CC)S(=O)N[C@H](C(=O)O)CNC(=O)c1ccc(c(c1)C)CNCCCCCNCC
+answer= CCCCCS(=O)(=O)N[C@@H](CNC(=O)c1ccc2CN(CCC3CCNCC3)C(=O)c2c1)C(=O)O
+output = CCCCS(=O)(=O)N[C@@H](Cc1ccc(CN)c(CcCCCCCCCCCCCCCCCC()C)CCO)O)))O)ccc
+
+
+input = C(=C(_C)/C/C(=C/C=C(/O)_CN(=O)O)/C)_C=C_C
+answer= Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+](=O)[O-]
+output = Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+](=O)[O-]
+
+
+input = C(=C_CNC(=O)C(c1c(C(=O)N)[nH]c2c1ccc(c2)Cl)NC(C(=O)NO)CCC)/C
+answer= CC(C)CC(NC(C(=O)NCc1ccccc1)c1c([nH]c2cc(Cl)ccc12)C(=O)NO)C(=O)NO
+output = CC(C)CC(NC(C(=O)NCc1ccccc1)c1c([nH]c2cc(Cl)ccc12)C(=O)NO)C(=O)NO
+
+
+input = C(N1C(=NC=NC1C)N)/C=C_C(=C/C)_Cl
+answer= CC1(C)N=C(N)N=C(N)N1c1ccc(Cl)cc1
+output = Cc1nc(nc(NCccccccccccccccccccc
+
+
+input = C(=C)(C)/C=N_C=C_N(CCNCC)C
+answer= C1CNCCN(C1)c1cncc(c1)c1ccccc1
+output = Cc1ccc(F)cc1)C1Nc2CCCccccccc1
+
+
+input = NC/N=C(/N)_C(=C)/C(=C_CN(c1ccc(c(c1)C)C)CC/N=C_SC)/N
+answer= Cc1cc2nc(c3cscn3)n(c3ccc4c(N)nc(N)nc4c3)c2cc1C
+output = Cc1cc2nc(c3cscn3)n(c3ccc4c(N)nc(N)nc4c3)c2cc1C
+
+
+input = C(=C_1/CC=CC=C1)(_O)/CC(=O)/C=C/C(=C)C
+answer= O=c1cc(oc2c3ccccc3ccc12)c1ccccc1
+output = Oc1ccc2c(c1)occ(c1ccc(O)c(O)c1)c2=O
+
+
+input = C(C)/C(=C_1/CC(=C(N1)C=O)CCCOc1ccc/c(=C/C)/c/1=C_C)/C
+answer= OC(=O)c1c(CCCOc2cccc3ccccc23)c2cccc3CCCn1c23
+output = CCc1c(Oc2cccc(OC)c2cccccccccccccccccccccccccccccccc
+
+
+input = C(NC)/N=C(/C1CCN(Cc2ccccc2)C1)_NCCC=N
+answer= CC(C)n1ncc2c1nc([nH]c2=O)[C@@H]1CN(Cc2ccccc2)C[C@H]1C
+output = C[C@@H](N1CC(C1)c1ncccc1ccccccccccccccccccccccc
+
+
+SYSTEM: Finishing...
+SYSTEM: Done!
