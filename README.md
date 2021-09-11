@@ -1,7 +1,9 @@
 D3Hit2Lead could be run on Linux and Windows.
 
 Taking the Windows System in a laptop with only CPU as an example:
+
 INSTALL
+
 (1) Install Anaconda3: https://docs.anaconda.com/anaconda/install/windows/
 
 (2) Install PyTorch: https://pytorch.org/get-started/locally/
@@ -10,6 +12,7 @@ INSTALL
 (3) Download the whole folder of D3Hit2Lead to your local computer.
 
 D3Hit2Lead Usage:
+
 (1) On the Anaconda Prompt, Change directory to the D3Hit2Lead fold.
 
 (2) Type "python  D3Hit2Lead.py" on the Anaconda Prompt.
